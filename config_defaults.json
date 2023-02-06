@@ -1,0 +1,65 @@
+{
+  "app": {
+    "checkForUpdates": true,
+    "shutdown": {
+      "stopGracePeriod": "5m",
+      "log": {
+        "enabled": true,
+        "filePath": "shutdown.log"
+      }
+    }
+  },
+  "logger": {
+    "level": "info",
+    "disableCaller": true,
+    "disableStacktrace": false,
+    "stacktraceLevel": "panic",
+    "encoding": "console",
+    "outputPaths": [
+      "stdout"
+    ],
+    "disableEvents": true
+  },
+  "db": {
+    "tangle": {
+      "path": "database/tangle"
+    },
+    "utxo": {
+      "path": "database/utxo"
+    },
+    "debug": false
+  },
+  "protocol": {
+    "networkID": "chrysalis-mainnet",
+    "bech32HRP": "iota"
+  },
+  "restAPI": {
+    "bindAddress": "localhost:9094",
+    "advertiseAddress": "",
+    "limits": {
+      "maxBodyLength": "1M",
+      "maxResults": 1000
+    },
+    "swaggerEnabled": false,
+    "debugRequestLoggerEnabled": false
+  },
+  "inx": {
+    "enabled": false,
+    "address": "localhost:9029",
+    "maxConnectionAttempts": 30,
+    "targetNetworkName": ""
+  },
+  "profiling": {
+    "enabled": false,
+    "bindAddress": "localhost:6060"
+  },
+  "prometheus": {
+    "enabled": false,
+    "bindAddress": "localhost:9312",
+    "goMetrics": false,
+    "processMetrics": false,
+    "restAPIMetrics": true,
+    "inxMetrics": true,
+    "promhttpMetrics": false
+  }
+}

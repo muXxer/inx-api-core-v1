@@ -1,0 +1,7 @@
+.idea
+.DS_Store
+inx-api-core-v1
+/database
+
+# IDE related files
+.vscode/
