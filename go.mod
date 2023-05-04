@@ -14,7 +14,7 @@ require (
 	github.com/pangpanglabs/echoswagger/v2 v2.4.1
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.14.0
-	go.uber.org/dig v1.16.1
+	go.uber.org/dig v1.17.0
 )
 
 require (
